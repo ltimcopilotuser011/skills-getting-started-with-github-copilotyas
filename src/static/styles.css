@@ -90,11 +90,43 @@ section h3 {
 }
 
 .activity-card .participants-list {
-  list-style-type: disc;
-  margin-left: 20px;
+  list-style-type: none;
+  margin-left: 0;
   color: #333;
   font-size: 15px;
   margin-bottom: 0;
+  padding-left: 0;
+}
+
+.activity-card .participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.activity-card .participants-list li:last-child {
+  border-bottom: none;
+}
+
+.participant-email {
+  flex: 1;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 6px;
+  margin-left: 8px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #ffebee;
 }
 
 .activity-card .participants-section.no-participants {
